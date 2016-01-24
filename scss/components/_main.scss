@@ -2,13 +2,8 @@ html {
   font-family: $patrick;
 }
 
-.border {
-  border: 2px solid red;
-  background-color: $goldeny;
-  padding-left: 20px;
-  p{
-    color: $grey-dark;
-  }
+.background {
+  background-color: $background;
 }
 
 // Extend
