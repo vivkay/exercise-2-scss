@@ -1,0 +1,23 @@
+@mixin button($bg-color){
+  display: inline-block;
+  margin: 1em;
+  padding: .5em 1em;
+  border-radius: 3px;
+  text-decoration: none;
+  color: #fff;
+  background: $bg-color;
+  &:hover{
+    background: black;
+    color: grey;
+    text-decoration: none;
+  }
+}
+
+.primary-btn{
+  @include button(#2980b9);
+}
+
+.secondary-btn{
+  @include button(red);
+}
+
