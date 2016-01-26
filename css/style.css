@@ -1,4 +1,24 @@
 @import url(https://fonts.googleapis.com/css?family=Patrick+Hand+SC);
+@-webkit-keyframes spin {
+  0% {
+    transformY: rotate(0deg); }
+  100% {
+    transformY: rotate(360deg); } }
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+@-webkit-keyframes float {
+  0% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(20px); } }
+@keyframes float {
+  0% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(20px); } }
 .primary-btn, ul li:nth-child(3), li:nth-child(1) {
   display: inline-block;
   margin: 1em;
@@ -31,6 +51,9 @@ html {
 .background {
   background-color: black; }
 
+.white {
+  color: #ffffff; }
+
 .center-container {
   text-align: center;
   margin: 5%; }
@@ -39,33 +62,11 @@ html {
   font-size: 20em;
   -webkit-animation: float 12s ease-in-out alternate infinite;
   animation: float 12s ease-in-out alternate infinite; }
+  .icon-alice:hover {
+    color: #66ccff; }
+  .icon-alice:active {
+    color: #00ff99; }
 
-.icon-alice:hover {
-  color: lightblue; }
-
-.icon-alice:active {
-  color: aqua; }
-
-@-webkit-keyframes float {
-  0% {
-    transform: translateY(0); }
-  50% {
-    transform: translateY(20px); } }
-@keyframes float {
-  0% {
-    transform: translateY(0); }
-  50% {
-    transform: translateY(20px); } }
-@-webkit-keyframes spin {
-  0% {
-    transformY: rotate(0deg); }
-  100% {
-    transformY: rotate(360deg); } }
-@keyframes spin {
-  0% {
-    transform: rotate(0deg); }
-  100% {
-    transform: rotate(360deg); } }
 .icon-rabbit {
   font-size: 5em;
   position: absolute;
@@ -88,9 +89,9 @@ html {
   -webkit-animation: spin 12s ease-in-out alternate infinite;
   animation: spin 12s ease-in-out alternate infinite; }
   .icon-teapot:hover {
-    color: yellow; }
+    color: #ffff00; }
   .icon-teapot:active {
-    color: gold; }
+    color: #3333ff; }
 
 .title {
   font-size: 2.5em;
@@ -98,13 +99,13 @@ html {
 
 .subtitle {
   font-size: 1.25em;
-  color: yellow; }
+  color: #00ff99; }
 
 p {
   margin-top: 0; }
 
 i {
-  color: white; }
+  color: #ffffff; }
 
 .icon-apple {
   font-size: 3em;

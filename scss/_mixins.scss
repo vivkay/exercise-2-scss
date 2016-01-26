@@ -1,3 +1,4 @@
+
 @mixin button($bg-color){
   display: inline-block;
   margin: 1em;
@@ -11,6 +12,51 @@
     color: grey;
     text-decoration: none;
   }
+}
+
+@mixin spin {
+
+}
+
+@-webkit-keyframes spin {
+    0% {
+        transformY: rotate(0deg);
+    }
+    100% {
+        transformY: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@mixin float {
+  -webkit-animation: float 12s ease-in-out alternate infinite;
+  animation: float 12s ease-in-out alternate infinite;
+}
+
+@-webkit-keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+}
+
+@keyframes float{
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(20px);
+    }
 }
 
 .primary-btn{

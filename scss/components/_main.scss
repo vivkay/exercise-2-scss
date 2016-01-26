@@ -6,6 +6,9 @@ html {
   background-color: $background;
 }
 
+.white {
+  color: $white;
+}
 
 .center-container {
   text-align: center;
@@ -14,56 +17,14 @@ html {
 
 .icon-alice {
   font-size: 20em;
-   -webkit-animation: float 12s ease-in-out alternate infinite;
-    animation: float 12s ease-in-out alternate infinite;
+  &:hover{
+    color: $lightblue;
+  }
+  &:active{
+    color: $aqua;
+  }
+  @include float;
 }
-
-.icon-alice:hover {
-  color: lightblue;
-}
-
-.icon-alice:active {
-  color: aqua;
-}
-
-
-@-webkit-keyframes float {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(20px);
-    }
-}
-
-@keyframes float{
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(20px);
-    }
-}
-
-@-webkit-keyframes spin {
-    0% {
-        transformY: rotate(0deg);
-    }
-    100% {
-        transformY: rotate(360deg);
-    }
-}
-
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-
 
 .icon-rabbit {
   font-size: 5em;
