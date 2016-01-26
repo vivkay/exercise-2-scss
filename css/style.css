@@ -19,7 +19,7 @@
     transform: translateY(0); }
   50% {
     transform: translateY(20px); } }
-.primary-btn, ul li:nth-child(3), li:nth-child(1) {
+.primary-btn {
   display: inline-block;
   margin: 1em;
   padding: .5em 1em;
@@ -27,12 +27,12 @@
   text-decoration: none;
   color: #fff;
   background: #2980b9; }
-  .primary-btn:hover, ul li:hover:nth-child(3), li:hover:nth-child(1) {
+  .primary-btn:hover {
     background: black;
     color: grey;
     text-decoration: none; }
 
-.secondary-btn, ul li:nth-child(2) {
+.secondary-btn {
   display: inline-block;
   margin: 1em;
   padding: .5em 1em;
@@ -40,7 +40,7 @@
   text-decoration: none;
   color: #fff;
   background: red; }
-  .secondary-btn:hover, ul li:hover:nth-child(2) {
+  .secondary-btn:hover {
     background: black;
     color: grey;
     text-decoration: none; }
@@ -49,7 +49,10 @@ html {
   font-family: "Patrick Hand SC", cursive; }
 
 .background {
-  background-color: black; }
+  background-image: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%; }
 
 .white {
   color: #ffffff; }
@@ -74,12 +77,10 @@ html {
   left: 10%;
   -webkit-animation: spin 8s ease-in-out alternate infinite;
   animation: spin 8s ease-in-out alternate infinite; }
-
-.icon-rabbit:hover {
-  color: orange; }
-
-.icon-rabbit:active {
-  color: yellow; }
+  .icon-rabbit:hover {
+    color: #00ff99; }
+  .icon-rabbit:active {
+    color: #ffff00; }
 
 .icon-teapot {
   font-size: 7em;
@@ -114,12 +115,10 @@ i {
   left: 15%;
   -webkit-animation: float 6s ease-in-out alternate infinite;
   animation: float 6s ease-in-out alternate infinite; }
-
-.icon-apple:hover {
-  color: red; }
-
-.icon-apple:active {
-  color: orange; }
+  .icon-apple:hover {
+    color: #ff0000; }
+  .icon-apple:active {
+    color: #ff6600; }
 
 .btn {
   background-color: #ccc;
@@ -139,8 +138,3 @@ i {
 .btn i {
   vertical-align: baseline;
   padding-right: .5em; }
-
-a {
-  text-decoration: none; }
-  a:hover {
-    text-decoration: underline; }

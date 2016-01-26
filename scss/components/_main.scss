@@ -3,7 +3,7 @@ html {
 }
 
 .background {
-  background-color: $background;
+  @include bg;
 }
 
 .white {
@@ -16,7 +16,7 @@ html {
 }
 
 .icon-alice {
-  font-size: 20em;
+  @include icon(20em);
   &:hover{
     color: $lightblue;
   }
@@ -27,7 +27,13 @@ html {
 }
 
 .icon-rabbit {
-  font-size: 5em;
+  @include icon(5em);
+  &:hover{
+    color: $aqua;
+  }
+  &:active {
+    color: $yellow;
+  }
   position: absolute;
   top: 10%;
   left: 10%;
@@ -35,16 +41,8 @@ html {
   animation: spin 8s ease-in-out alternate infinite;
 }
 
-.icon-rabbit:hover{
-  color: orange;
-}
-
-.icon-rabbit:active{
-  color: yellow;
-}
-
 .icon-teapot{
-  font-size: 7em;
+  @include icon(7em);
   position: absolute;
   top: 45%;
   right: 5%;
@@ -77,20 +75,18 @@ i {
 }
 
 .icon-apple {
-  font-size: 3em;
+  @include icon(3em);
+  &:hover {
+    color: $red;
+  }
+  &:active {
+    color: $orange;
+  }
   position: absolute;
   top: 60%;
   left: 15%;
   -webkit-animation: float 6s ease-in-out alternate infinite;
   animation: float 6s ease-in-out alternate infinite;
-}
-
-.icon-apple:hover {
-  color: red;
-}
-
-.icon-apple:active {
-  color: orange;
 }
 
 .btn {
@@ -113,24 +109,5 @@ i {
 .btn i {
   vertical-align: baseline;
   padding-right: .5em;
-}
-
-
-
-// Extend
-
-ul li:nth-child(3), li:nth-child(1){
-  @extend .primary-btn;
-}
-
-ul li:nth-child(2){
-  @extend .secondary-btn;
-}
-
-a {
-  text-decoration: none;
-  &:hover{
-    text-decoration: underline;
-  }
 }
 
