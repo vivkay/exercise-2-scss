@@ -89,14 +89,12 @@ html {
   right: 5%;
   -webkit-animation: spin 12s ease-in-out alternate infinite;
   animation: spin 12s ease-in-out alternate infinite;
-}
-
-.icon-teapot:hover{
-  color: yellow;
-}
-
-.icon-teapot:active{
-  color: blue;
+    &:hover{
+        color: $yellow;
+    }
+    &:active{
+        color: $blue;
+    }
 }
 
 .title {
@@ -106,7 +104,7 @@ html {
 
 .subtitle {
   font-size: 1.25em;
-  color: grey;
+  color: $secondary;
 }
 
 p {
@@ -114,11 +112,7 @@ p {
 }
 
 i {
-  color: white;
-}
-
-.white {
-  color: white;
+  color: $white;
 }
 
 .icon-apple {
@@ -159,10 +153,6 @@ i {
   vertical-align: baseline;
   padding-right: .5em;
 }
-
-
-
-
 
 
 

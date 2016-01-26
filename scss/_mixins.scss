@@ -20,17 +20,3 @@
 .secondary-btn{
   @include button(red);
 }
-
-@mixin icon($color){
-  font-size: 20em;
-  color: $color;
-  -webkit-animation: $animate;
-  animation: $animate;
-  &:hover{
-    color: $hover-color;
-  }
-}
-
-.alice {
-  @include icon(white);
-}
