@@ -1,17 +1,13 @@
 
-@mixin button($bg-color){
-  display: inline-block;
-  margin: 1em;
-  padding: .5em 1em;
-  border-radius: 3px;
+@mixin button($btn-color){
+  background-color: ($btn-color);
+  color: red;
+  font-weight: bold;
   text-decoration: none;
-  color: #fff;
-  background: $bg-color;
-  &:hover{
-    background: black;
-    color: grey;
-    text-decoration: none;
-  }
+  padding: .25em 4em 0 4em;
+  border-radius: 5px;
+  display: inline-block;
+  margin: .5em;
 }
 
 @mixin icon($size){

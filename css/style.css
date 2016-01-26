@@ -20,30 +20,24 @@
   50% {
     transform: translateY(20px); } }
 .primary-btn {
-  display: inline-block;
-  margin: 1em;
-  padding: .5em 1em;
-  border-radius: 3px;
+  background-color: #2980b9;
+  color: red;
+  font-weight: bold;
   text-decoration: none;
-  color: #fff;
-  background: #2980b9; }
-  .primary-btn:hover {
-    background: black;
-    color: grey;
-    text-decoration: none; }
+  padding: .25em 4em 0 4em;
+  border-radius: 5px;
+  display: inline-block;
+  margin: .5em; }
 
 .secondary-btn {
-  display: inline-block;
-  margin: 1em;
-  padding: .5em 1em;
-  border-radius: 3px;
+  background-color: red;
+  color: red;
+  font-weight: bold;
   text-decoration: none;
-  color: #fff;
-  background: red; }
-  .secondary-btn:hover {
-    background: black;
-    color: grey;
-    text-decoration: none; }
+  padding: .25em 4em 0 4em;
+  border-radius: 5px;
+  display: inline-block;
+  margin: .5em; }
 
 html {
   font-family: "Patrick Hand SC", cursive; }
@@ -121,19 +115,16 @@ i {
     color: #ff6600; }
 
 .btn {
-  background-color: #ccc;
-  color: black;
+  background-color: #00ff99;
+  color: red;
   font-weight: bold;
   text-decoration: none;
   padding: .25em 4em 0 4em;
   border-radius: 5px;
   display: inline-block;
   margin: .5em; }
-
-.btn:hover,
-.btn:active,
-.btn:focus {
-  background-color: #aaa; }
+  .btn:hover {
+    background-color: blue; }
 
 .btn i {
   vertical-align: baseline;

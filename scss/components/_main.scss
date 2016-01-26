@@ -90,20 +90,10 @@ i {
 }
 
 .btn {
-  background-color: #ccc;
-  color: black;
-  font-weight: bold;
-  text-decoration: none;
-  padding: .25em 4em 0 4em;
-  border-radius: 5px;
-  display: inline-block;
-  margin: .5em;
-}
-
-.btn:hover,
-.btn:active,
-.btn:focus {
-  background-color: #aaa;
+  @include button($aqua);
+  &:hover {
+    background-color: blue;
+  }
 }
 
 .btn i {
