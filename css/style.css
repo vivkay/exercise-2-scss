@@ -50,9 +50,9 @@ html {
 
 .background {
   background-image: url("../img/bg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%; }
+  background-size: auto;
+  width: 100%;
+  background-position: center; }
 
 .white {
   color: #ffffff; }
