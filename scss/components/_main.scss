@@ -90,9 +90,32 @@ i {
 }
 
 .btn {
-  @include button($aqua);
+  @include button($white);
   &:hover {
-    background-color: blue;
+    background-color: $aqua;
+  }
+  &:active {
+    background-color: $lightblue;
+  }
+}
+
+.btn-2 {
+  @include button($white);
+  &:hover {
+    background-color: $lightblue;
+  }
+  &:active {
+    background-color: $blue;
+  }
+}
+
+.btn-3 {
+  @include button($white);
+  &:hover {
+    background-color: $yellow;
+  }
+  &:active {
+    background-color: $orange;
   }
 }
 
